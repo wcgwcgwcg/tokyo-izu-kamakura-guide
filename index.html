@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>东京·伊豆·镰仓 5日行程攻略</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--c1:#f5f0e8;--c2:#e8dfd3;--c3:#d4c8b8;--bk:#1a1a1a;--tx:#2c2c2c;--tx2:#8a8a8a;--acc:#c45d3e;--acc2:#2d6a4f;--gold:#c9a96e;--w:#fff;--bg:#faf8f5;
+--sh:0 1px 3px rgba(0,0,0,.04),0 6px 16px rgba(0,0,0,.04);--shl:0 8px 30px rgba(0,0,0,.08);--r:12px;--rl:16px;
+--serif:'Playfair Display',Georgia,'Noto Serif SC',serif;--sans:'Noto Sans SC',system-ui,-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--tx);line-height:1.7;background:var(--bg);font-size:15px;-webkit-text-size-adjust:100%}
+a{color:var(--acc);text-decoration:none}img{max-width:100%;display:block}
+::selection{background:var(--acc);color:#fff}
+
+.hero{position:relative;background:var(--bk);color:var(--w);padding:max(72px,10vh) clamp(24px,6vw,56px) 48px;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 80%,rgba(196,93,62,.18),transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(201,169,110,.12),transparent 50%);animation:heroGlow 8s ease-in-out infinite alternate}
+.hero::after{content:'';position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+@keyframes heroGlow{0%{opacity:.8}100%{opacity:1;filter:hue-rotate(5deg)}}
+.hero>*{position:relative;z-index:1}
+.hero .kicker{font-family:var(--sans);font-size:.72em;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.hero h1{font-family:var(--serif);font-size:clamp(2em,6vw,3.2em);font-weight:700;letter-spacing:-1px;line-height:1.1;background:linear-gradient(135deg,#fff 0%,#e8d5c4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:rgba(255,255,255,.6);margin-top:12px;font-size:clamp(.88em,2vw,1em);max-width:600px}
+.hero .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.hero .pill{background:rgba(255,255,255,.06);border:1px solid rgba(201,169,110,.3);padding:7px 18px;border-radius:24px;font-size:.8em;color:rgba(255,255,255,.7);backdrop-filter:blur(8px)}
+
+.nav{position:sticky;top:0;z-index:100;background:rgba(250,248,245,.88);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--c2);overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav-in{display:flex;gap:2px;max-width:960px;margin:0 auto;padding:8px 24px}
+.nav a{padding:8px 16px;border-radius:8px;font-size:.8em;font-weight:600;color:var(--tx2);white-space:nowrap;transition:all .2s;flex-shrink:0}
+.nav a:hover{background:var(--c1);color:var(--tx)}
+.nav a.on{background:var(--bk);color:var(--w)}
+
+.c{max-width:960px;margin:0 auto;padding:0 clamp(24px,6vw,56px)}
+.sec{margin:52px 0 24px;display:flex;align-items:baseline;gap:10px}
+.sec::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--c2),transparent)}
+.sec-icon{font-family:var(--serif);font-size:1.4em;color:var(--gold)}
+.sec-text{font-family:var(--serif);font-size:1.4em;font-weight:700;letter-spacing:-.3px;color:var(--bk);font-style:italic}
+
+.dc{background:var(--w);border-radius:var(--rl);box-shadow:var(--sh);margin-bottom:28px;overflow:hidden;border:1px solid rgba(0,0,0,.04);transition:all .3s ease}
+.dc:hover{box-shadow:var(--shl);transform:translateY(-1px)}
+.dh{padding:22px 24px;display:flex;align-items:center;gap:16px;border-bottom:1px solid var(--c1);background:linear-gradient(135deg,rgba(250,248,245,.5),rgba(245,240,232,.6))}
+.dn{width:54px;height:54px;border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--w);font-weight:700;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.dn small{font-size:.4em;opacity:.7;text-transform:uppercase;letter-spacing:1.5px}
+.dn b{font-size:1.35em;line-height:1;font-family:var(--serif)}
+.dt{font-family:var(--serif);font-weight:700;font-size:1.08em;letter-spacing:-.2px}
+.ds{font-size:.78em;color:var(--tx2);margin-top:3px}
+
+.tr{margin:0 24px;padding:16px 18px;background:linear-gradient(135deg,#f0f4f8,#e8edf2);border-radius:var(--r);font-size:.82em;line-height:1.85;border-left:3px solid #5b8def}
+.tr b{color:#2952a3}
+.rt{display:inline-flex;align-items:center;gap:3px;background:var(--w);padding:3px 11px;border-radius:8px;font-size:.9em;margin:2px 1px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+
+.sp{padding:20px 24px;border-bottom:1px solid var(--c1);transition:background .2s;animation:fadeUp .4s ease both}
+.sp:hover{background:rgba(250,248,245,.5)}
+.sp:last-of-type{border-bottom:none}
+.sh{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.st{font-size:.68em;font-weight:700;color:var(--gold);background:linear-gradient(135deg,#fdf6f0,#f5ead8);padding:4px 12px;border-radius:6px;flex-shrink:0;border:1px solid rgba(201,169,110,.15)}
+.sn{font-weight:700;font-size:.96em}
+.sd{font-size:.84em;color:#555;line-height:1.8;margin-top:2px}.sd b{color:var(--tx);font-weight:600}
+
+.gl{display:flex;gap:10px;margin:14px 0 10px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:4px 0;position:relative}
+.gl::-webkit-scrollbar{display:none}
+.gl img{flex-shrink:0;width:200px;height:150px;object-fit:cover;border-radius:10px;background:var(--c1);transition:all .25s ease;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.gl img:hover{transform:scale(1.04) translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.tg{display:inline-block;padding:3px 10px;border-radius:6px;font-size:.68em;font-weight:600}
+.tg-food{background:#fff3e0;color:#e65100}
+.tg-scenic{background:#e8f5e9;color:#2e7d32}
+.tg-shop{background:#fce4ec;color:#c62828}
+.tg-trans{background:#e3f2fd;color:#1565c0}
+.tg-ticket{background:#fff8e1;color:#f57f17}
+.tg-exp{background:#f3e5f5;color:#6a1b9a}
+
+.xl{display:inline-flex;align-items:center;gap:4px;font-size:.72em;color:#ff2442;padding:4px 12px;background:#fff8f8;border:1px solid #ffe0e0;border-radius:20px;margin-top:8px;transition:all .15s}
+.xl:hover{background:#ffe8ec;transform:translateY(-1px);box-shadow:0 2px 8px rgba(255,36,66,.1)}
+
+.outfit-card{margin:0 24px 16px;padding:16px 18px;background:linear-gradient(135deg,#fefaf3,#fdf6ed);border-radius:var(--r);border:1px solid rgba(201,169,110,.15);font-size:.82em}
+.outfit-img{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:8px 0}
+.outfit-img::-webkit-scrollbar{display:none}
+.outfit-img img{width:90px;height:120px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.oc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px}
+.color-row{display:flex;gap:6px;align-items:center;margin-top:6px}
+.color-dot{width:22px;height:22px;border-radius:50%;border:2px solid rgba(255,255,255,.9);box-shadow:0 1px 4px rgba(0,0,0,.15),inset 0 0 0 1px rgba(0,0,0,.06)}
+.color-name{font-size:.66em;color:var(--tx2)}
+
+.ib{border-left:3px solid var(--gold);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:12px 24px 16px;font-size:.82em;line-height:1.8;background:linear-gradient(135deg,#fefbf6,#fdf8f0)}
+.ib b{color:var(--tx)}
+
+.bt{width:100%;border-collapse:separate;border-spacing:0;background:var(--w);border-radius:var(--rl);overflow:hidden;box-shadow:var(--sh);margin:20px 0;font-size:.84em}
+.bt th{background:var(--bk);color:var(--w);padding:12px 16px;text-align:left;font-weight:600}
+.bt td{padding:10px 16px;border-bottom:1px solid var(--c1)}
+.bt tr:last-child td{border-bottom:none}
+.bt tr:hover td{background:rgba(250,248,245,.5)}
+.tot td{background:#fef6f0!important;font-weight:700;color:var(--acc)}
+
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
+.tip{background:var(--w);border-radius:var(--rl);padding:18px;box-shadow:var(--sh);border:1px solid rgba(0,0,0,.04);transition:all .3s}
+.tip:hover{box-shadow:var(--shl);transform:translateY(-1px)}
+.tip h4{font-size:.9em;margin-bottom:6px}.tip p{font-size:.82em;color:var(--tx2);line-height:1.7}
+
+.ft{text-align:center;padding:48px 16px max(32px,env(safe-area-inset-bottom));color:var(--tx2);font-size:.84em;border-top:1px solid var(--c1);margin-top:48px}
+
+.btt{position:fixed;bottom:max(24px,env(safe-area-inset-bottom));right:20px;width:44px;height:44px;border-radius:50%;background:var(--bk);color:var(--w);border:none;font-size:1.1em;cursor:pointer;box-shadow:var(--shl);z-index:99;display:none;align-items:center;justify-content:center;transition:all .2s}
+.btt.show{display:flex}
+.btt:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.15)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:640px){
+  .hero{min-height:260px}
+  .dh{padding:16px 18px;gap:12px}.dn{width:46px;height:46px}
+  .sp{padding:16px 18px}.tr,.ib,.outfit-card{margin-left:18px;margin-right:18px}
+  .gl img{width:150px;height:112px}
+  .outfit-img img{width:75px;height:100px}
+  .oc-grid{grid-template-columns:1fr}
+  .tips{grid-template-columns:1fr}
+  .bt{font-size:.78em}.bt th,.bt td{padding:7px 10px}
+  .color-dot{width:18px;height:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="kicker">2026 May Travel Guide</div>
+<h1>Tokyo · Izu · Kamakura</h1>
+<p>5.22-5.26 / 5天4晚 / 6人朋友行 / 温泉海景 × 灌篮高手 × 东京购物美食</p>
+<div class="pills">
+<span class="pill">♨️ 伊豆温泉</span>
+<span class="pill">🏖️ 城崎海岸</span>
+<span class="pill">🏀 镰仓高校前</span>
+<span class="pill">🛍️ 涩谷·原宿</span>
+<span class="pill">🍜 东京美食</span>
+<span class="pill">👘 和服体验</span>
+</div>
+</div>
+
+<nav class="nav">
+<div class="nav-in">
+<a href="#day1" class="on">5/22 羽田→伊豆</a>
+<a href="#day2">5/23 伊豆一日</a>
+<a href="#day3">5/24 镰仓·江之岛</a>
+<a href="#day4">5/25 东京购物</a>
+<a href="#day5">5/26 浅草→回程</a>
+<a href="#budget">💰 费用</a>
+<a href="#tips">📋 贴士</a>
+</div>
+</nav>
+
+<div class="c">
+
+<div class="sec" id="day1"><span class="sec-icon">✈️</span><span class="sec-text">Day 1 · Arrival</span></div>
+<div class="dc">
+<div class="dh">
+<div class="dn" style="background:#5b8def"><small>MAY</small><b>22</b></div>
+<div><div class="dt">羽田机场 → 伊豆半岛</div><div class="ds">抵达日 · 前往温泉天堂 · 22°C 多云</div></div>
+</div>
+
+<div class="outfit-card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<span><b>👗 今日穿搭</b> &nbsp;|&nbsp; Travel Comfort</span>
+<span style="font-size:.78em;color:var(--tx2)">🌤 22°C 多云转晴</span>
+</div>
+<div class="oc-grid">
+<div><b style="color:var(--acc)">♀ 她</b><br>轻薄针织开衫 + 高腰阔腿裤 + 运动鞋，机场到温泉旅馆一路舒适
+<div class="color-row"><div class="color-dot" style="background:#F5F5DC" title="米白"></div><div class="color-dot" style="background:#D4C8B8" title="卡其"></div><div class="color-dot" style="background:#E8DFD3" title="燕麦"></div><span class="color-name">米白 / 卡其 / 燕麦</span></div>
+</div>
+<div><b style="color:#2952a3">♂ 他</b><br>宽松短袖T恤 + 工装裤 + 白色板鞋，轻便出行
+<div class="color-row"><div class="color-dot" style="background:#2C2C2C" title="黑色"></div><div class="color-dot" style="background:#556B2F" title="军绿"></div><div class="color-dot" style="background:#F5F5F5" title="白色"></div><span class="color-name">黑色 / 军绿 / 白色</span></div>
+</div>
+</div>
+</div>
+
+<div class="tr">
+<b>🚃 羽田机场 → 伊豆</b>（约3小时）<br>
+<span class="rt">✈️ 14:20 到达羽田</span> →
+<span class="rt">🚃 京急线</span> 羽田→品川（20min, ¥300）→
+<span class="rt">🚅 东海道新干线</span> 品川→热海（40min, ¥3,740）→
+<span class="rt">🚃 伊豆急行</span> 热海→伊豆高原/伊东（30-50min, ¥650-1,300）<br>
+💡 <b>建议</b>：购买「伊豆满喫きっぷ」通票，含往返新干线+伊豆急行+观光设施折扣
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">17:30</span><span class="sn">🏨 入住温泉旅馆</span></div>
+<div class="sd">
+推荐入住<b>伊东温泉</b>或<b>伊豆高原</b>区域的温泉旅馆。6人团体推荐预订两间和室（10-12叠），含一泊二食（早晚餐）。<br>
+推荐旅馆：<b>望水</b>（海景露天风吕，人均¥15,000-25,000）、<b>かめや楽寛</b>（性价比高，人均¥10,000-15,000）、<b>青山やまと</b>（纯正和风体验）
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/6899df7800000000230187c1?xsec_token=ABU8g-4wFZvo3jTW24BlHeJPKC-0TBAFj0ZrCKGNbPujc%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/10a8532d251dda4dbc20f03c1bc34a11/1040g00831l1tsrc8j2304a0oh3dnnhvpg3f6gk8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6899df7800000000230187c1?xsec_token=ABU8g-4wFZvo3jTW24BlHeJPKC-0TBAFj0ZrCKGNbPujc%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/33b2e68c018029f48268a90cf6e246a6/1040g00831l1tsrc8j2604a0oh3dnnhvpeoecqoo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6899df7800000000230187c1?xsec_token=ABU8g-4wFZvo3jTW24BlHeJPKC-0TBAFj0ZrCKGNbPujc%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/74729bb7497accf8ade39c2d6f1fe97d/1040g2sg31l71rdft5i7g4a0oh3dnnhvpc9lbb9g!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6899df7800000000230187c1?xsec_token=ABU8g-4wFZvo3jTW24BlHeJPKC-0TBAFj0ZrCKGNbPujc%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/5cb394a4a2cfc5618ac1915fef0a5c47/1040g00831l1tsrc8j2504a0oh3dnnhvpm680vj8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-exp">♨️ 温泉</span><span class="tg tg-food">🍽 一泊二食</span><span class="tg tg-ticket">💰 人均¥10,000-25,000</span></div>
+<a href="https://www.xiaohongshu.com/explore/6899df7800000000230187c1?xsec_token=ABU8g-4wFZvo3jTW24BlHeJPKC-0TBAFj0ZrCKGNbPujc%3D&xsec_source=pc_share" target="_blank" class="xl">📖 伊豆温泉旅馆推荐 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">19:00</span><span class="sn">🍣 温泉旅馆会席料理</span></div>
+<div class="sd">
+享用旅馆提供的<b>会席料理</b>，通常包含伊豆名产：<b>金目鯛煮付</b>（金目鲷红烧）、新鲜刺身拼盘、伊势虾天妇罗、当地时令蔬菜。
+餐后可去体验旅馆的<b>露天温泉</b>，边泡汤边看星空。
+</div>
+<div class="tags"><span class="tg tg-food">🐟 金目鯛</span><span class="tg tg-food">🦐 伊势虾</span><span class="tg tg-exp">🌙 露天风吕</span></div>
+</div>
+
+<div class="ib">
+💡 <b>Day 1 费用预估（人均）</b>：交通 ¥5,000 + 温泉旅馆含餐 ¥15,000 ≈ <b>¥20,000</b>（约￥1,000）
+</div>
+</div>
+
+<div class="sec" id="day2"><span class="sec-icon">⛰️</span><span class="sec-text">Day 2 · Izu Explorer</span></div>
+<div class="dc">
+<div class="dh">
+<div class="dn" style="background:#82c9a1"><small>MAY</small><b>23</b></div>
+<div><div class="dt">伊豆半岛 · 自然与海景</div><div class="ds">火山草原 × 海岸绝壁 × 海鲜盛宴 × 温泉 · 24°C 晴</div></div>
+</div>
+
+<div class="outfit-card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<span><b>👗 今日穿搭</b> &nbsp;|&nbsp; Nature Adventure</span>
+<span style="font-size:.78em;color:var(--tx2)">☀️ 24°C 晴朗</span>
+</div>
+<div class="outfit-img">
+<a href="https://www.xiaohongshu.com/explore/691d6ae4000000000d03e003?xsec_token=ABWYUMZtvXNRVtiEACkxnAiFCxFnVea36QQ4XwDngeVhM%3D&xsec_source=pc_share" target="_blank"><img src="https://sns-webpic-qc.xhscdn.com/202604220125/7082dde09b149ee20088b9abc582cfbd/notes_pre_post/1040g3k831p2dfsk432804a3a279ivfhlj5qv200!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/691d6ae4000000000d03e003?xsec_token=ABWYUMZtvXNRVtiEACkxnAiFCxFnVea36QQ4XwDngeVhM%3D&xsec_source=pc_share" target="_blank"><img src="https://sns-webpic-qc.xhscdn.com/202604220125/041378fa265dc55fd52a07708c3b6f04/notes_pre_post/1040g3k831p2dfsk432704a3a279ivfhlaf5nueo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/691d6ae4000000000d03e003?xsec_token=ABWYUMZtvXNRVtiEACkxnAiFCxFnVea36QQ4XwDngeVhM%3D&xsec_source=pc_share" target="_blank"><img src="https://sns-webpic-qc.xhscdn.com/202604220125/970d15bdc59f9d7cc15e5fe086e0a014/notes_pre_post/1040g3k831p2dfsk4329g4a3a279ivfhl6t4u0qo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a>
+</div>
+<div class="oc-grid">
+<div><b style="color:var(--acc)">♀ 她</b><br>防晒长袖罩衫 + 运动背心 + 短裤/运动裙 + 运动凉鞋，大室山山顶风大带薄外套
+<div class="color-row"><div class="color-dot" style="background:#87CEEB" title="天蓝"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><div class="color-dot" style="background:#F0E68C" title="淡黄"></div><span class="color-name">天蓝 / 白色 / 淡黄</span></div>
+</div>
+<div><b style="color:#2952a3">♂ 他</b><br>速干Polo衫/T恤 + 工装短裤 + 徒步鞋，城崎海岸步道注意防滑
+<div class="color-row"><div class="color-dot" style="background:#2F4F4F" title="深灰绿"></div><div class="color-dot" style="background:#F5DEB3" title="小麦"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><span class="color-name">深灰绿 / 小麦 / 白色</span></div>
+</div>
+</div>
+<div style="margin-top:8px;color:var(--acc);font-weight:600">⚠️ 大室山山顶风大，务必携带防晒帽和薄外套；城崎海岸步道有部分湿滑路段，穿防滑鞋</div>
+</div>
+
+<div class="tr">
+<b>🚗 今日路线</b>（建议打车/租车，6人均摊更划算）<br>
+<span class="rt">🏨 旅馆出发</span> →
+<span class="rt">🚗 15min</span> 大室山 →
+<span class="rt">🚗 10min</span> 城崎海岸 →
+<span class="rt">🚗 15min</span> 伊豆仙人掌动物公园 →
+<span class="rt">🚗 20min</span> 伊东海鲜市场<br>
+💡 <b>建议</b>：6人可在伊豆高原站附近租车（日租约¥8,000-10,000），比打车划算且自由
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">08:30</span><span class="sn">⛰️ 大室山 Omuroyama</span></div>
+<div class="sd">
+伊豆半岛的标志性景点，<b>580米高的火山锥</b>，山顶一圈约1公里的步道可360度俯瞰太平洋、富士山和伊豆群岛。乘坐<b>缆车登顶</b>（6分钟），山顶草坡如同吉卜力动画场景。<br>
+<b>门票</b>：缆车往返 ¥700/人 | <b>用时</b>：约1-1.5小时
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/69dcde6800000000230246bd?xsec_token=ABXiApR4eJt9E6ljPzQVESdCSUDQqUi0qZT9wjDASz4Qw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/9c205e3954b6b25b1cb0c2eac6a09d43/notes_pre_post/1040g3k831ut82f18ii8g40vuo3ihjd1b5rl3hbo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/69dcde6800000000230246bd?xsec_token=ABXiApR4eJt9E6ljPzQVESdCSUDQqUi0qZT9wjDASz4Qw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/6666d3c5f1b069c64b8bf5733b929605/notes_pre_post/1040g3k831ut82f18ii9040vuo3ihjd1bfc9fo88!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/69dcde6800000000230246bd?xsec_token=ABXiApR4eJt9E6ljPzQVESdCSUDQqUi0qZT9wjDASz4Qw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/ee9daced8854c2678e7e5785ed84221c/notes_pre_post/1040g3k831ut82f18ii9g40vuo3ihjd1bdh7k4eo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/69dcde6800000000230246bd?xsec_token=ABXiApR4eJt9E6ljPzQVESdCSUDQqUi0qZT9wjDASz4Qw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/9952f24a8602a99945cc90aa61a401cc/notes_pre_post/1040g3k831ut82f18iia040vuo3ihjd1bg85t5to!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">📸 绝景</span><span class="tg tg-ticket">🎫 ¥700</span><span class="tg tg-scenic">🗻 富士山眺望</span></div>
+<a href="https://www.xiaohongshu.com/explore/69dcde6800000000230246bd?xsec_token=ABXiApR4eJt9E6ljPzQVESdCSUDQqUi0qZT9wjDASz4Qw%3D&xsec_source=pc_share" target="_blank" class="xl">📖 大室山绝景攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">10:30</span><span class="sn">🌊 城崎海岸 Jogasaki Coast</span></div>
+<div class="sd">
+约4000年前大室山喷发的熔岩流入海形成的<b>壮观海岸线</b>。推荐走<b>门�的吊桥（Kadowaki Tsuribashi）</b>（高23米、长48米，横跨海蚀洞），桥上可观赏碧蓝的太平洋和奇岩峭壁。<br>
+沿海岸步道走到<b>灯台（灯塔）</b>，全程约30分钟，沿途海景绝美。
+<b>门票</b>：免费 | <b>用时</b>：约1-2小时
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/667d72ac000000001c020281?xsec_token=AB_RXHkJA1ZucY9KELj4tfEiHQbRLE6bjzU6wYyrembLw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/7d0e540e0a13033d66b07a53cf84bfa7/1040g2sg314i6fmqjme8g49m2kjessu31en2nikg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/667d72ac000000001c020281?xsec_token=AB_RXHkJA1ZucY9KELj4tfEiHQbRLE6bjzU6wYyrembLw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/e5b8f8bf0735aef39d765caada5a01d7/1040g2sg314i6fmqjme8049m2kjessu31pigdth0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/667d72ac000000001c020281?xsec_token=AB_RXHkJA1ZucY9KELj4tfEiHQbRLE6bjzU6wYyrembLw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/dd69042d26016cb6488c3377cbedc072/1040g2sg314i6fmqjme7g49m2kjessu31efsf5dg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/667d72ac000000001c020281?xsec_token=AB_RXHkJA1ZucY9KELj4tfEiHQbRLE6bjzU6wYyrembLw%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220121/f078aa3ca9a4d9c3784f4cbe9756be99/1040g2sg314i6fmqjme7049m2kjessu31jil1pig!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">🌊 海岸地质</span><span class="tg tg-scenic">🌉 吊桥</span><span class="tg tg-ticket">🆓 免费</span></div>
+<a href="https://www.xiaohongshu.com/explore/667d72ac000000001c020281?xsec_token=AB_RXHkJA1ZucY9KELj4tfEiHQbRLE6bjzU6wYyrembLw%3D&xsec_source=pc_share" target="_blank" class="xl">📖 城崎海岸攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">12:30</span><span class="sn">🍣 伊豆海鲜午餐</span></div>
+<div class="sd">
+<b>推荐餐厅（3选1）</b>：<br>
+① <b>伊豆高原ビール本店</b> — 海鲜丼+地啤酒，人均¥1,500-2,500，海景座位<br>
+② <b>磯料理 開福丸</b> — 金目鲷定食、海鲜烤物，人均¥2,000-3,000，当地人推荐<br>
+③ <b>伊东鱼市场</b> — 市场内食堂，超新鲜刺身丼，人均¥1,000-1,800
+</div>
+<div class="tags"><span class="tg tg-food">🐟 金目鲷</span><span class="tg tg-food">🍺 地啤酒</span><span class="tg tg-food">🦑 新鲜刺身</span></div>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">14:00</span><span class="sn">🦔 伊豆仙人掌动物公园</span></div>
+<div class="sd">
+超治愈的<b>小型动物互动乐园</b>，可以近距离接触水豚（泡温泉的水豚超有名！）、小袋鼠、松鼠猴等。公园在山坡上，可以俯瞰大海。<br>
+<b>门票</b>：¥2,600/人 | <b>用时</b>：约1.5-2小时
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/66288f80000000001c009021?xsec_token=ABtF9IzlRBRdgwYzDDYXSo_--JYAkteYPi9Xxg5UoD8Uk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/7eb26bd034f9a708a4b25c9f3f4c91c7/1040g0083121vg412ji005oio6508cp5dl0nq9g0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/66288f80000000001c009021?xsec_token=ABtF9IzlRBRdgwYzDDYXSo_--JYAkteYPi9Xxg5UoD8Uk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/b1c15cb08264e3673e1eff72e3a65773/1040g2sg311v9oc9c320g5oio6508cp5dmltqrpg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/66288f80000000001c009021?xsec_token=ABtF9IzlRBRdgwYzDDYXSo_--JYAkteYPi9Xxg5UoD8Uk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/efe598ad107d4800f2eb5d69dc2b43ed/1040g2sg311v9oc9c32105oio6508cp5dms5dfo0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-exp">🦫 水豚温泉</span><span class="tg tg-ticket">🎫 ¥2,600</span><span class="tg tg-scenic">📸 超治愈</span></div>
+<a href="https://www.xiaohongshu.com/explore/66288f80000000001c009021?xsec_token=ABtF9IzlRBRdgwYzDDYXSo_--JYAkteYPi9Xxg5UoD8Uk%3D&xsec_source=pc_share" target="_blank" class="xl">📖 伊豆动物公园攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">16:30</span><span class="sn">☕ 伊豆高原咖啡厅</span></div>
+<div class="sd">
+推荐<b>Le Feu</b>（海景阳台、自家烘焙）或<b>ケニーズハウスカフェ</b>（人气软冰淇淋）。在海风中享受下午茶时光，为一天的暴走充电。
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/67b985f500000000290385de?xsec_token=ABXWpFw2E5vVXkVCVe6onlrwUlHu518pYim6ThJUCxT5U%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/893354e6452231b0685279b974adc002/1040g2sg31e6rr2v2gk704a63is9mob7scg7ipi8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/67b985f500000000290385de?xsec_token=ABXWpFw2E5vVXkVCVe6onlrwUlHu518pYim6ThJUCxT5U%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/0c534e0b95d17ec0ae25408634d7b8d2/1040g2sg31e6rr2v2gk7g4a63is9mob7s6unjp98!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/67b985f500000000290385de?xsec_token=ABXWpFw2E5vVXkVCVe6onlrwUlHu518pYim6ThJUCxT5U%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/9a5d24956f58d4ad737a11fec202b036/1040g2sg31e6rr2v2gk804a63is9mob7skeit2gg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-food">☕ 咖啡</span><span class="tg tg-scenic">🌊 海景</span></div>
+<a href="https://www.xiaohongshu.com/explore/67b985f500000000290385de?xsec_token=ABXWpFw2E5vVXkVCVe6onlrwUlHu518pYim6ThJUCxT5U%3D&xsec_source=pc_share" target="_blank" class="xl">📖 伊豆咖啡厅推荐 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">18:00</span><span class="sn">♨️ 温泉 + 晚餐</span></div>
+<div class="sd">
+返回旅馆享受温泉和晚餐。如果住两晚同一旅馆可以换不同的浴场体验。也可选择到<b>伊东温泉街</b>的居酒屋体验当地夜生活，推荐<b>杉国商店</b>的烤金目鲷。
+</div>
+<div class="tags"><span class="tg tg-exp">♨️ 温泉</span><span class="tg tg-food">🍶 居酒屋</span></div>
+</div>
+
+<div class="ib">
+💡 <b>Day 2 费用预估（人均）</b>：大室山缆车 ¥700 + 仙人掌公园 ¥2,600 + 午餐 ¥2,000 + 咖啡 ¥800 + 租车均摊 ¥1,500 + 温泉旅馆含餐 ¥15,000 ≈ <b>¥22,600</b>（约￥1,130）
+</div>
+</div>
+
+<div class="sec" id="day3"><span class="sec-icon">🏀</span><span class="sec-text">Day 3 · Kamakura Vibes</span></div>
+<div class="dc">
+<div class="dh">
+<div class="dn" style="background:#f0a868"><small>MAY</small><b>24</b></div>
+<div><div class="dt">镰仓 · 江之岛 · 灌篮高手圣地</div><div class="ds">海岸电车 × 灌篮高手取景地 × 江之岛落日 · 23°C 晴</div></div>
+</div>
+
+<div class="outfit-card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<span><b>👗 今日穿搭</b> &nbsp;|&nbsp; Coastal Casual</span>
+<span style="font-size:.78em;color:var(--tx2)">☀️ 23°C 晴间多云</span>
+</div>
+<div class="oc-grid">
+<div><b style="color:var(--acc)">♀ 她</b><br>连衣裙/碎花裙 + 草编包 + 凉鞋，镰仓海边超出片；怕晒加一件薄防晒衣
+<div class="color-row"><div class="color-dot" style="background:#FFE4E1" title="蜜桃粉"></div><div class="color-dot" style="background:#FFF8DC" title="玉米丝"></div><div class="color-dot" style="background:#E6E6FA" title="薰衣草"></div><span class="color-name">蜜桃粉 / 米色 / 薰衣草</span></div>
+</div>
+<div><b style="color:#2952a3">♂ 他</b><br>清爽短袖衬衫 + 九分裤 + 帆布鞋/凉鞋，海边休闲风
+<div class="color-row"><div class="color-dot" style="background:#4169E1" title="蓝色"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><div class="color-dot" style="background:#F5DEB3" title="浅卡其"></div><span class="color-name">蓝色 / 白色 / 浅卡其</span></div>
+</div>
+</div>
+</div>
+
+<div class="tr">
+<b>🚃 伊豆 → 镰仓</b>（约2小时）<br>
+<span class="rt">🚃 伊豆急行</span> 伊豆高原→热海（50min）→
+<span class="rt">🚃 JR东海道线</span> 热海→大船（60min, ¥1,340）→
+<span class="rt">🚃 湘南单轨/JR</span> 大船→�的仓（10min）<br>
+💡 <b>到镰仓后</b>：购买「江之电一日券」¥800，无限次乘坐江之电（镰仓↔藤沢），沿途所有景点通用
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">10:30</span><span class="sn">🏀 镰仓高校前 · 灌篮高手圣地</span></div>
+<div class="sd">
+<b>《SLAM DUNK》经典取景地</b>！站在镰仓高校前站的平交道口，蓝天+大海+江之电电车经过的场景与漫画中一模一样。<br>
+<b>拍照技巧</b>：工作日人少容易拍到空景；站在路口靠海侧，等电车经过时按快门。
+<b>注意</b>：请勿站在铁道上拍照，注意安全和当地居民。
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/078332da8b382e21c8a335b5e2ff95ea/1040g2sg31a546r5cn2704b4h1jep2c9pv08pd8o!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/6504c68cf3a1f3b23a0fe2b8f2d82127/1040g2sg31a546r5cn27g4b4h1jep2c9pi56kakg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/641b8323379a75882779c47e29255cb0/1040g2sg31a546r5cn2804b4h1jep2c9poapbpvo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/f1e2bd6183000286f9b5e11b302a1ded/1040g2sg31a546r5cn28g4b4h1jep2c9pgifgr5g!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">🏀 灌篮高手</span><span class="tg tg-scenic">📸 必打卡</span><span class="tg tg-ticket">🆓 免费</span></div>
+<a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" class="xl">📖 镰仓高校前攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">11:30</span><span class="sn">🏖️ 江之岛</span></div>
+<div class="sd">
+从镰仓高校前站坐2站到<b>江之岛站</b>，穿过弁天桥步行上岛。岛上推荐路线：<br>
+<b>江岛神社</b>（恋爱祈愿胜地）→ <b>Samuel Cocking苑</b>（海景花园）→ <b>江之岛Sea Candle展望台</b>（360度海景，天气好可看富士山）→ <b>稚儿之渊</b>（岩礁落日绝景）<br>
+<b>门票</b>：展望台套票 ¥500 | <b>用时</b>：约2-3小时
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/78f64361d71635c0c7cc2630954bb4f2/1040g2sg31a546r5cn2704b4h1jep2c9pv08pd8o!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/4a909455854c4e4e0b8f62a3aa23190f/1040g2sg31a546r5cn27g4b4h1jep2c9pi56kakg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/0897c4e68b0a78719b1b8f6c24f5dbb9/1040g2sg31a546r5cn2804b4h1jep2c9poapbpvo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/be5ffd1c3ee05f3b128326b4e5eaaa58/1040g2sg31a546r5cn28g4b4h1jep2c9pgifgr5g!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">🌅 海景</span><span class="tg tg-exp">⛩ 神社</span><span class="tg tg-ticket">🎫 ¥500</span></div>
+<a href="https://www.xiaohongshu.com/explore/6734abcd000000001b0125dd?xsec_token=ABkd-Kh2763zj5sgsGyl2s70HzO6CoLtzjQwNNptKTurA%3D&xsec_source=pc_share" target="_blank" class="xl">📖 江之岛打卡攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">13:30</span><span class="sn">🍽 江之岛美食</span></div>
+<div class="sd">
+<b>推荐（3选1）</b>：<br>
+① <b>とびっちょ</b> — 江之岛名物「生しらす丼」（生吻仔鱼丼），人均¥1,200-1,800<br>
+② <b>江之岛亭</b> — 海景位置绝佳，海鲜天妇罗定食，人均¥1,500-2,500<br>
+③ <b>Eggs 'n Things</b> — 网红松饼店，适合下午茶，人均¥1,000-1,500
+</div>
+<div class="tags"><span class="tg tg-food">🐟 吻仔鱼丼</span><span class="tg tg-food">🍤 海鲜天妇罗</span></div>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">15:00</span><span class="sn">🗿 镰仓大佛 · 高德院</span></div>
+<div class="sd">
+日本三大佛像之一，<b>高约13.35米的青铜阿弥陀佛坐像</b>，建于1252年。可以进入佛像内部参观（额外¥50）。<br>
+从江之岛坐江之电到长谷站步行10分钟。<br>
+<b>门票</b>：¥300/人 | <b>用时</b>：约30-45分钟
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/672320f8000000003c01f403?xsec_token=ABpcxqyI1FnQBtG1nMB0MkkY1eed0RwgbbjXa1_ceojzk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/49a963f71c3c8898b804c1db22781293/1040g2sg319k00js7ng705nkv5qlg8av14kaiudg!nd_dft_wgth_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/678b7589000000001602f138?xsec_token=ABtr8b-mO7Z7AdzWUBWlluU8qqER7S4wXk4ZJtwObnaTQ%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/a737b5480237f34740536a9f8c24a717/1040g2sg31cpsao750k805neajf9g91nl4d980jo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/678b7589000000001602f138?xsec_token=ABtr8b-mO7Z7AdzWUBWlluU8qqER7S4wXk4ZJtwObnaTQ%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220122/3cdae489cc45ef1e0bda2f0e673a641c/1040g2sg31cqbv6s10m705neajf9g91nljjjt2o0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">🗿 国宝</span><span class="tg tg-ticket">🎫 ¥300</span><span class="tg tg-scenic">📸 历史建筑</span></div>
+<a href="https://www.xiaohongshu.com/explore/672320f8000000003c01f403?xsec_token=ABpcxqyI1FnQBtG1nMB0MkkY1eed0RwgbbjXa1_ceojzk%3D&xsec_source=pc_share" target="_blank" class="xl">📖 镰仓大佛攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">16:00</span><span class="sn">🛍 小町通 · 镰仓购物街</span></div>
+<div class="sd">
+从长谷站坐回镰仓站，出站即到<b>小町通</b>。这条约300米的步行街两侧是各种小店、和果子铺、文创杂货店。<br>
+必尝：<b>镰仓焼</b>（栗子/抹茶馅小糕点）、<b>紫芋冰淇淋</b>、<b>�的仓Shirasu可乐饼</b>
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/668212b3000000001e010b6a?xsec_token=AB3HEmpy7a6tG5SUVBmys03a8sK6KhRzxu4aMwkB1EK8k%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/d896cbd8e756c57b0e8efe1edf27041a/1040g2sg314mn0hn762905nlibacg87p1n54i0q0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/668212b3000000001e010b6a?xsec_token=AB3HEmpy7a6tG5SUVBmys03a8sK6KhRzxu4aMwkB1EK8k%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/48ce45beb807c3530519f0cef271b9a9/1040g2sg314mn0hm4lu7g5nlibacg87p1fo0ndo0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/668212b3000000001e010b6a?xsec_token=AB3HEmpy7a6tG5SUVBmys03a8sK6KhRzxu4aMwkB1EK8k%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/d4b49dad1530ddf71ffc99ae99424521/1040g2sg314mn0hm4lu805nlibacg87p1tff3b1o!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-shop">🛍 购物街</span><span class="tg tg-food">🍡 和果子</span><span class="tg tg-food">🍦 抹茶冰淇淋</span></div>
+<a href="https://www.xiaohongshu.com/explore/668212b3000000001e010b6a?xsec_token=AB3HEmpy7a6tG5SUVBmys03a8sK6KhRzxu4aMwkB1EK8k%3D&xsec_source=pc_share" target="_blank" class="xl">📖 小町通逛吃攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">17:30</span><span class="sn">🏨 前往横滨住宿</span></div>
+<div class="sd">
+从镰仓坐JR横须贺线到横滨约25分钟。推荐住<b>横滨站</b>或<b>樱木町/みなとみらい</b>区域，交通方便且夜景绝美。<br>
+推荐酒店：<b>横滨樱木町Washington Hotel</b>（人均¥5,000-8,000/晚）或<b>アパホテル横浜</b>（经济型，人均¥3,500-5,000）
+</div>
+<div class="tags"><span class="tg tg-trans">🚃 JR 25min</span><span class="tg tg-ticket">💰 人均¥3,500-8,000</span></div>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">19:00</span><span class="sn">🍜 横滨中华街晚餐</span></div>
+<div class="sd">
+日本最大的唐人街！500多家餐厅。推荐体验<b>食べ歩き</b>（边走边吃）：<b>肉包</b>、<b>小笼包</b>、<b>北京烤鸭</b>、<b>炒饭</b>。<br>
+推荐餐厅：<b>聘珍楼</b>（老字号粤菜）、<b>萬珍楼</b>（高级中华料理）
+</div>
+<div class="tags"><span class="tg tg-food">🥟 中华料理</span><span class="tg tg-food">🍜 食べ歩き</span></div>
+</div>
+
+<div class="ib">
+💡 <b>Day 3 费用预估（人均）</b>：交通 ¥2,500 + 江之电一日券 ¥800 + 江之岛展望台 ¥500 + 大佛 ¥300 + 午餐 ¥1,500 + 晚餐 ¥2,000 + 酒店 ¥5,000 ≈ <b>¥12,600</b>（约￥630）
+</div>
+</div>
+
+<div class="sec" id="day4"><span class="sec-icon">🛍</span><span class="sec-text">Day 4 · Tokyo Rush</span></div>
+<div class="dc">
+<div class="dh">
+<div class="dn" style="background:#e8a0bf"><small>MAY</small><b>25</b></div>
+<div><div class="dt">东京 · 购物美食全攻略</div><div class="ds">涩谷×原宿×秋叶原×新宿 · 购物+美食+二次元 · 25°C 晴</div></div>
+</div>
+
+<div class="outfit-card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<span><b>👗 今日穿搭</b> &nbsp;|&nbsp; Tokyo Urban Chic</span>
+<span style="font-size:.78em;color:var(--tx2)">☀️ 25°C 晴</span>
+</div>
+<div class="outfit-img">
+<a href="https://www.xiaohongshu.com/explore/6777adc5000000000900cc3f?xsec_token=ABkZImAq-KgVzWVuPi0BFZ1p2SkAvqpNQw-r8fi8JQLIg%3D&xsec_source=pc_share" target="_blank"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/a902e4e826b1b23225330cff7778ec7c/1040g00831c6i6i59gu005nkoiung8eloir7bqr8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6777adc5000000000900cc3f?xsec_token=ABkZImAq-KgVzWVuPi0BFZ1p2SkAvqpNQw-r8fi8JQLIg%3D&xsec_source=pc_share" target="_blank"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/bbea382f187134b3f19062e1c5240b6a/1040g00831c6i6i59gu405nkoiung8elo0tlj8og!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6777adc5000000000900cc3f?xsec_token=ABkZImAq-KgVzWVuPi0BFZ1p2SkAvqpNQw-r8fi8JQLIg%3D&xsec_source=pc_share" target="_blank"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/00d714d6a8737574aaeb63068c98feb3/1040g00831c6i6i59gu0g5nkoiung8elopt3i5ag!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a>
+</div>
+<div class="oc-grid">
+<div><b style="color:var(--acc)">♀ 她</b><br>时髦T恤/Crop top + 高腰阔腿裤/半裙 + 厚底鞋/小白鞋，涩谷原宿街拍style
+<div class="color-row"><div class="color-dot" style="background:#000000" title="黑色"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><div class="color-dot" style="background:#FF69B4" title="粉色"></div><span class="color-name">黑色 / 白色 / 粉色点缀</span></div>
+</div>
+<div><b style="color:#2952a3">♂ 他</b><br>潮牌T恤 + 直筒牛仔裤 + Air Force/New Balance，秋叶原二次元也不违和
+<div class="color-row"><div class="color-dot" style="background:#1C1C1C" title="炭黑"></div><div class="color-dot" style="background:#4169E1" title="牛仔蓝"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><span class="color-name">炭黑 / 牛仔蓝 / 白色</span></div>
+</div>
+</div>
+</div>
+
+<div class="tr">
+<b>🚃 横滨 → 东京</b>（约30min）<br>
+<span class="rt">🚃 JR湘南新宿线/东横线</span> 横滨→涩谷（30min, ¥480）<br>
+💡 今日行程全程靠地铁，建议购买<b>「东京地铁24小时券」¥600</b>，东京Metro+都营全线无限乘
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">09:30</span><span class="sn">🏙️ 涩谷 Shibuya</span></div>
+<div class="sd">
+从<b>涩谷Sky</b>（展望台47楼，¥2,000）开始一天，俯瞰涩谷十字路口和东京全景。然后到世界最繁忙的<b>涩谷十字路口</b>体验人群洪流。<br>
+涩谷109大楼周边有大量潮牌店：<b>SHIBUYA109</b>、<b>PARCO</b>、<b>Mega Don Quijote</b>（唐吉诃德，药妆/零食/电器一站式购物）
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/9208a5a9f2a1c36c3165b998faadbdb1/1040g00831b52pt6v7g0g5o38gon0btha1gkmpig!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/9c2708ae7d6220b9179765cc008f4073/1040g00831b52pt6v7g005o38gon0bthao7locf0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/03ae6bf1330cf11305bd5b43de1de311/1040g00831b52pt6v7g105o38gon0bthas9o56g8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/28f1f045dc89006bbc7395d100364205/1040g00831b52pt6v7g1g5o38gon0btha64tglag!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">📸 涩谷Sky</span><span class="tg tg-shop">🛍 涩谷109</span><span class="tg tg-shop">🏪 唐吉诃德</span></div>
+<a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" class="xl">📖 涩谷打卡攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">11:30</span><span class="sn">👘 原宿·竹下通·表参道</span></div>
+<div class="sd">
+从涩谷步行15分钟到原宿。<b>竹下通</b>（Takeshita Street）是东京年轻人潮流中心，各种可爱杂货、二手古着店、棉花糖可丽饼。<br>
+<b>表参道</b>更偏高端，有LV、Dior旗舰店，建筑本身就是打卡亮点。
+</div>
+<div class="tags"><span class="tg tg-shop">👗 古着</span><span class="tg tg-shop">🛍 潮牌</span><span class="tg tg-food">🍡 可丽饼</span></div>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">12:30</span><span class="sn">🍜 原宿·涩谷午餐</span></div>
+<div class="sd">
+<b>推荐（3选1）</b>：<br>
+① <b>AFURI 阿夫利</b>（表参道店）— 柚子盐拉面，清爽系，人均¥1,200<br>
+② <b>bills 表参道</b> — 世界第一早餐，Ricotta松饼超有名，人均¥1,800-2,500<br>
+③ <b>一蘭拉面 涩谷店</b> — 经典博多豚骨，单人格子间用餐，人均¥1,000
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/6617570e000000001a00d8f2?xsec_token=ABBySS8FzTvtX52oYoQp45fYexHDLqKJ2wdmTpRxMR9xQ%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/31700e43ecd1f8aa75131516b215b69c/1040g008311efjiv3mq0040su609rtin669esemo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6617570e000000001a00d8f2?xsec_token=ABBySS8FzTvtX52oYoQp45fYexHDLqKJ2wdmTpRxMR9xQ%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/b392376b6930b11687ba81f2348dfb80/1040g008311efjiv3mq0g40su609rtin6pu056lo!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/6617570e000000001a00d8f2?xsec_token=ABBySS8FzTvtX52oYoQp45fYexHDLqKJ2wdmTpRxMR9xQ%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/31ddf5f163e18787b8d0f4d88542ea81/1040g008311efjiv3mq1040su609rtin6nc8g8cg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-food">🍜 柚子盐拉面</span><span class="tg tg-food">🥞 松饼</span><span class="tg tg-food">🍥 博多豚骨</span></div>
+<a href="https://www.xiaohongshu.com/explore/6617570e000000001a00d8f2?xsec_token=ABBySS8FzTvtX52oYoQp45fYexHDLqKJ2wdmTpRxMR9xQ%3D&xsec_source=pc_share" target="_blank" class="xl">📖 东京拉面推荐 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">14:00</span><span class="sn">🎮 秋叶原 Akihabara</span></div>
+<div class="sd">
+二次元圣地！推荐路线：<b>ヨドバシカメラ</b>（电器）→ <b>Radio会馆</b>（手办/模型）→ <b>Animate</b>（动漫周边）→ <b>SEGA 游戏厅</b>（夹娃娃/街机）→ <b>Mandarake</b>（二手漫画/绝版手办）<br>
+药妆购物推荐去<b>松本清</b>（マツモトキヨシ）或<b>Sundrug</b>，秋叶原店通常比涩谷便宜且人少
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/69c2474f000000001a02d9de?xsec_token=ABbFXgs1GQakBBrN5uYgW4r4tp1FfoIBy80msabmRhn8g%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/53825876e566b1e8793d402eff73bb0b/notes_pre_post/1040g3k831u3dd1v3240046mkk8vf2oahkgt7ih0!nd_dft_wgth_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/69c2474f000000001a02d9de?xsec_token=ABbFXgs1GQakBBrN5uYgW4r4tp1FfoIBy80msabmRhn8g%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/6b1ff777b22f5b92f1fc846739bef569/notes_pre_post/1040g3k831u3dd1v3240g46mkk8vf2oahjqnl84o!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/69c2474f000000001a02d9de?xsec_token=ABbFXgs1GQakBBrN5uYgW4r4tp1FfoIBy80msabmRhn8g%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/698fe4e9b5578bb32e2d39fdf297d07e/notes_pre_post/1040g3k831u3dd1v3241046mkk8vf2oahiadu31g!nd_dft_wgth_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/69c2474f000000001a02d9de?xsec_token=ABbFXgs1GQakBBrN5uYgW4r4tp1FfoIBy80msabmRhn8g%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/d177be33b4c726a9232fd3916223c6db/notes_pre_post/1040g3k831u3dd1v3241g46mkk8vf2oah9186jp0!nd_dft_wgth_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-shop">🎮 二次元</span><span class="tg tg-shop">📱 电器</span><span class="tg tg-shop">💊 药妆</span></div>
+<a href="https://www.xiaohongshu.com/explore/69c2474f000000001a02d9de?xsec_token=ABbFXgs1GQakBBrN5uYgW4r4tp1FfoIBy80msabmRhn8g%3D&xsec_source=pc_share" target="_blank" class="xl">📖 秋叶原逛街攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">17:00</span><span class="sn">🛒 药妆购物集中扫货</span></div>
+<div class="sd">
+<b>必买清单</b>：Anessa小金瓶防晒、FANCL卸妆油、龙角散、休足时间、SANA豆乳系列、Canmake/KATE彩妆、Royce巧克力（伴手礼）、薯条三兄弟。<br>
+<b>退税</b>：单店消费满¥5,000（不含税）可退税10%，记得带护照！
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/67a2041a0000000018010fcb?xsec_token=ABmrbX_VJcgYV_RnhdsOae_id8fL0a6dOpC0HrzT-p3nk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/def6d6033c07863097ed2897e67299f2/1040g2sg31df9cq6j10805ppspukndjlbcqu1bs8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/67a2041a0000000018010fcb?xsec_token=ABmrbX_VJcgYV_RnhdsOae_id8fL0a6dOpC0HrzT-p3nk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/6d8cec9a8a694f1da6a00a96e607d3db/1040g2sg31df9cq6j108g5ppspukndjlbou26l68!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/67a2041a0000000018010fcb?xsec_token=ABmrbX_VJcgYV_RnhdsOae_id8fL0a6dOpC0HrzT-p3nk%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/341e1be40aa93af2d361ec6296fc7e7b/1040g2sg31df9cq6j10905ppspukndjlb2dbori0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-shop">💊 药妆</span><span class="tg tg-shop">🎁 伴手礼</span><span class="tg tg-ticket">💰 退税10%</span></div>
+<a href="https://www.xiaohongshu.com/explore/67a2041a0000000018010fcb?xsec_token=ABmrbX_VJcgYV_RnhdsOae_id8fL0a6dOpC0HrzT-p3nk%3D&xsec_source=pc_share" target="_blank" class="xl">📖 东京药妆购物攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">19:00</span><span class="sn">🍺 新宿居酒屋晚餐</span></div>
+<div class="sd">
+<b>推荐（3选1）</b>：<br>
+① <b>思い出横丁</b>（回忆横丁）— 新宿站西口，昭和风情的小巷居酒屋群，烤串+啤酒，人均¥2,000-3,000<br>
+② <b>鳥貴族</b> — 全品¥360均一价的连锁居酒屋，6人吃喝无压力，人均¥2,500<br>
+③ <b>歌舞伎町 Robot Restaurant</b>附近 — 体验歌舞伎町的霓虹夜色，周边居酒屋选择丰富
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/67751bbc0000000013008fe1?xsec_token=ABiCJMglVucgZC8bFcR2l8HTZsF5Axn81SXyzZVK_QPsI%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/65cb244bb257fe65f5cd62b2cbca1c01/1040g00831c41ru97ge005nssq53g8i3n6856om0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/67751bbc0000000013008fe1?xsec_token=ABiCJMglVucgZC8bFcR2l8HTZsF5Axn81SXyzZVK_QPsI%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/fa2364a4500e1129f9fe5fd0f955a776/1040g00831c41ru97ge0g5nssq53g8i3nupvjs8g!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/67751bbc0000000013008fe1?xsec_token=ABiCJMglVucgZC8bFcR2l8HTZsF5Axn81SXyzZVK_QPsI%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220123/b859baa070070f97d26e1fae63b47c1d/1040g00831c41ru97ge105nssq53g8i3np5fg9d0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-food">🍺 居酒屋</span><span class="tg tg-food">🍢 烤串</span><span class="tg tg-exp">🏮 昭和风情</span></div>
+<a href="https://www.xiaohongshu.com/explore/67751bbc0000000013008fe1?xsec_token=ABiCJMglVucgZC8bFcR2l8HTZsF5Axn81SXyzZVK_QPsI%3D&xsec_source=pc_share" target="_blank" class="xl">📖 新宿居酒屋推荐 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">21:00</span><span class="sn">🏨 东京住宿</span></div>
+<div class="sd">
+推荐住<b>品川</b>或<b>大门/浜松町</b>区域，方便第二天去浅草以及赶往羽田机场。<br>
+推荐酒店：<b>相铁FRESA INN品川</b>（人均¥4,000-6,000）、<b>东横INN品川駅高輪口</b>（经济型，人均¥3,500）
+</div>
+<div class="tags"><span class="tg tg-ticket">💰 人均¥3,500-6,000</span><span class="tg tg-trans">✈️ 近羽田</span></div>
+</div>
+
+<div class="ib">
+💡 <b>Day 4 费用预估（人均）</b>：交通 ¥1,100 + 地铁24h券 ¥600 + 涩谷Sky ¥2,000 + 午餐 ¥1,200 + 晚餐 ¥2,500 + 酒店 ¥4,500 + 购物预算 ¥10,000-30,000 ≈ <b>¥12,000-32,000</b>（约￥600-1,600）
+</div>
+</div>
+
+<div class="sec" id="day5"><span class="sec-icon">✈️</span><span class="sec-text">Day 5 · Farewell Tokyo</span></div>
+<div class="dc">
+<div class="dh">
+<div class="dn" style="background:#5b8def"><small>MAY</small><b>26</b></div>
+<div><div class="dt">浅草 · 晴空塔 → 羽田机场</div><div class="ds">最后的打卡 × 经典东京 × 15:40起飞 · 24°C 晴</div></div>
+</div>
+
+<div class="outfit-card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<span><b>👗 今日穿搭</b> &nbsp;|&nbsp; City & Flight</span>
+<span style="font-size:.78em;color:var(--tx2)">☀️ 24°C 晴</span>
+</div>
+<div class="oc-grid">
+<div><b style="color:var(--acc)">♀ 她</b><br>舒适连衣裙/T恤+裙子 + 运动鞋（行李多方便走路），浅草拍照好看
+<div class="color-row"><div class="color-dot" style="background:#FF6347" title="番茄红"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><div class="color-dot" style="background:#F5DEB3" title="小麦"></div><span class="color-name">番茄红 / 白色 / 小麦</span></div>
+</div>
+<div><b style="color:#2952a3">♂ 他</b><br>简洁T恤 + 休闲长裤 + 运动鞋，方便赶路和拿行李
+<div class="color-row"><div class="color-dot" style="background:#2F4F4F" title="深灰"></div><div class="color-dot" style="background:#FFFFFF" title="白色"></div><div class="color-dot" style="background:#87CEEB" title="浅蓝"></div><span class="color-name">深灰 / 白色 / 浅蓝</span></div>
+</div>
+</div>
+</div>
+
+<div class="tr">
+<b>📦 行李寄存方案</b><br>
+酒店退房后可在<b>品川站 Coin Locker</b>（¥400-700/个）寄存大件行李，轻装出发。或使用<b>ecbo cloak</b> APP预约附近店铺寄存。<br>
+<b>⏰ 时间线</b>：最晚13:00从浅草出发去羽田，预留2小时Check-in + 免税店
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">08:00</span><span class="sn">⛩ 浅草寺 · 雷门</span></div>
+<div class="sd">
+东京最古老的寺院，<b>雷门大灯笼</b>是东京的标志性符号。早上8点前人少，是拍到干净照片的最佳时间。<br>
+穿过<b>仲见世通</b>（250米的传统商业街），品尝<b>人形烧</b>、<b>雷门炸馒头</b>、<b>抹茶冰淇淋</b>。<br>
+<b>门票</b>：免费 | <b>用时</b>：约1-1.5小时
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/66e24d3300000000250309cc?xsec_token=ABOfAhySIHKaM3HHSFz7p6mQpsrqfRQXHC29p6yF_8WV0%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/59e782bfe6f3d52121a336ee6d32eb6c/1040g2sg317km5b533q804btvkaeao6lo7p8dqn8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/66e24d3300000000250309cc?xsec_token=ABOfAhySIHKaM3HHSFz7p6mQpsrqfRQXHC29p6yF_8WV0%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/051f05a31ebbe6985890dfd60fc7d250/1040g2sg317km5b533q8g4btvkaeao6lojv5c4tg!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/66e24d3300000000250309cc?xsec_token=ABOfAhySIHKaM3HHSFz7p6mQpsrqfRQXHC29p6yF_8WV0%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/a6f24f5dcc67a6b330a05ce162d0dba6/1040g2sg317km5b533q704btvkaeao6loorfdl10!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/66e24d3300000000250309cc?xsec_token=ABOfAhySIHKaM3HHSFz7p6mQpsrqfRQXHC29p6yF_8WV0%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/9a1bd2487bd65dbebf423c676bbf12ba/1040g2sg317km5b533q7g4btvkaeao6lo1t2nv8o!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">⛩ 东京地标</span><span class="tg tg-food">🍡 仲见世通</span><span class="tg tg-ticket">🆓 免费</span></div>
+<a href="https://www.xiaohongshu.com/explore/66e24d3300000000250309cc?xsec_token=ABOfAhySIHKaM3HHSFz7p6mQpsrqfRQXHC29p6yF_8WV0%3D&xsec_source=pc_share" target="_blank" class="xl">📖 浅草寺攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">09:30</span><span class="sn">🗼 东京晴空塔 Tokyo Skytree</span></div>
+<div class="sd">
+从浅草步行15分钟可达，沿途可拍<b>隅田川+晴空塔</b>的经典角度。<br>
+634米高的世界第一高电波塔，<b>Tembo Deck</b>（350m展望台，¥2,100）可俯瞰整个东京。下方的<b>Solamachi商场</b>有大量伴手礼店，适合最后采购。
+</div>
+<div class="gl"><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/8920ebfef37bbfe1451b8cfaa87e5e4d/1040g00831b52pt6v7g0g5o38gon0btha1gkmpig!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/d5c40e6d336cd2782238c413c7f928a2/1040g00831b52pt6v7g005o38gon0bthao7locf0!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a><a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" rel="noopener" style="flex-shrink:0"><img src="https://sns-webpic-qc.xhscdn.com/202604220124/ddfa1dfb5e7294ab51ee9c9586b0b306/1040g00831b52pt6v7g105o38gon0bthas9o56g8!nd_dft_wlteh_webp_3" loading="lazy" onerror="this.parentElement.remove()"></a></div>
+<div class="tags"><span class="tg tg-scenic">🗼 634m展望</span><span class="tg tg-shop">🎁 伴手礼</span><span class="tg tg-ticket">🎫 ¥2,100</span></div>
+<a href="https://www.xiaohongshu.com/explore/675564ee00000000020274e8?xsec_token=ABCVa_20EbAAl5qjgcm6rJDbOKQlyi02IjEZk0uCTdyp8%3D&xsec_source=pc_share" target="_blank" class="xl">📖 晴空塔打卡攻略 →</a>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">11:00</span><span class="sn">🍽 浅草/押上午餐</span></div>
+<div class="sd">
+<b>推荐（3选1）</b>：<br>
+① <b>大黑家天妇罗</b> — 浅草百年老店，超大尺寸天妇罗盖饭，人均¥1,500-2,000<br>
+② <b>今半 浅草本店</b> — 寿喜烧/牛肉锅，6人聚餐氛围好，人均¥3,000-5,000<br>
+③ <b>Solamachi内美食楼层</b> — 选择丰富，六厨/叙叙苑烤肉等，人均¥1,500-3,000
+</div>
+<div class="tags"><span class="tg tg-food">🍤 天妇罗</span><span class="tg tg-food">🥩 寿喜烧</span></div>
+</div>
+
+<div class="sp">
+<div class="sh"><span class="st">12:30</span><span class="sn">✈️ 前往羽田机场</span></div>
+<div class="sd">
+回酒店取行李后前往羽田。<br>
+<b>路线A（推荐）</b>：品川 → 京急线 → 羽田机场（20min, ¥300）<br>
+<b>路线B</b>：浅草 → 都营浅草线直通京急 → 羽田机场（45min, ¥620）<br>
+到达后先办理值机和退税，<b>羽田机场免税店</b>还可最后补货（推荐白色恋人、Tokyo Banana）。
+</div>
+<div class="tags"><span class="tg tg-trans">✈️ 15:40起飞</span><span class="tg tg-shop">🛒 免税店</span></div>
+</div>
+
+<div class="ib">
+💡 <b>Day 5 费用预估（人均）</b>：交通 ¥1,000 + 晴空塔 ¥2,100 + 午餐 ¥2,000 + 行李寄存 ¥500 ≈ <b>¥5,600</b>（约￥280）
+</div>
+</div>
+
+<div class="sec" id="budget"><span class="sec-icon">💰</span><span class="sec-text">Budget Overview</span></div>
+
+<table class="bt">
+<tr><th>日期</th><th>行程</th><th>交通</th><th>景点门票</th><th>餐饮</th><th>住宿</th><th>人均合计</th></tr>
+<tr><td>5/22 D1</td><td>羽田→伊豆</td><td>¥5,000</td><td>—</td><td>含旅馆</td><td>¥15,000</td><td>¥20,000</td></tr>
+<tr><td>5/23 D2</td><td>伊豆一日</td><td>¥1,500</td><td>¥3,300</td><td>¥2,800</td><td>¥15,000</td><td>¥22,600</td></tr>
+<tr><td>5/24 D3</td><td>镰仓·江之岛</td><td>¥3,300</td><td>¥800</td><td>¥3,500</td><td>¥5,000</td><td>¥12,600</td></tr>
+<tr><td>5/25 D4</td><td>东京购物</td><td>¥1,700</td><td>¥2,000</td><td>¥3,700</td><td>¥4,500</td><td>¥12,000+</td></tr>
+<tr><td>5/26 D5</td><td>浅草→回程</td><td>¥1,000</td><td>¥2,100</td><td>¥2,000</td><td>—</td><td>¥5,600</td></tr>
+<tr class="tot"><td colspan="2"><b>5日合计（人均）</b></td><td>¥12,500</td><td>¥8,200</td><td>¥12,000</td><td>¥39,500</td><td><b>¥72,800</b></td></tr>
+<tr class="tot"><td colspan="6"><b>折合人民币（约1:0.05）</b></td><td><b>≈ ￥3,640</b></td></tr>
+</table>
+
+<div class="ib">
+💡 以上为基础费用（不含机票和购物），实际购物预算因人而异。6人均摊交通和住宿后更划算！<br>
+<b>支付方式</b>：Visa/Mastercard信用卡最通用，部分店铺支持支付宝/微信支付。建议兑换少量日元现金（约¥30,000/人）用于小店和自动贩卖机。
+</div>
+
+<div class="sec" id="tips"><span class="sec-icon">📋</span><span class="sec-text">Travel Tips</span></div>
+
+<div class="tips">
+<div class="tip">
+<h4>📱 必装APP</h4>
+<p><b>Google Maps</b>（导航神器）、<b>乘换案内</b>（电车换乘）、<b>PayPay</b>（日本移动支付）、<b>Klook/美团海外</b>（门票预购）、<b>翻译</b>（Google翻译相机实时翻译菜单）</p>
+</div>
+<div class="tip">
+<h4>🌐 上网方案</h4>
+<p>推荐购买<b>eSIM</b>（如Airalo、Ubigi）或在国内提前租<b>WiFi蛋</b>。6人出行建议2个WiFi蛋互相备份，日租约¥10-15元/台。</p>
+</div>
+<div class="tip">
+<h4>🚃 交通卡</h4>
+<p>建议到达后购买<b>Suica/PASMO</b>交通卡（iPhone钱包可直接开通Apple Pay Suica），充值后全程刷卡坐车、便利店消费，非常方便。</p>
+</div>
+<div class="tip">
+<h4>♨️ 温泉礼仪</h4>
+<p>① 入浴前彻底洗净身体 ② 长发需盘起 ③ 毛巾不可入水 ④ 有纹身需确认旅馆是否接受（私汤通常OK）⑤ 不要在浴场拍照</p>
+</div>
+<div class="tip">
+<h4>🛒 退税攻略</h4>
+<p>单店单日消费满<b>¥5,000</b>（税前）可退税。一般消费品（食品、药妆）退税后需密封袋包装，在离境前不可开封。电器等不受此限制。</p>
+</div>
+<div class="tip">
+<h4>🗑 垃圾分类</h4>
+<p>日本街上几乎没有垃圾桶！随身带小袋装垃圾，便利店门口通常有分类垃圾桶可以丢。分类：可燃（燃えるゴミ）、不可燃、瓶罐、PET瓶。</p>
+</div>
+<div class="tip">
+<h4>💴 小费文化</h4>
+<p>日本<b>不需要给小费</b>，给小费反而可能造成困扰。服务费通常已包含在价格中。</p>
+</div>
+<div class="tip">
+<h4>🔌 插座</h4>
+<p>日本电压100V，插座为<b>两脚扁插</b>（同中国两脚插头），一般不需要转换器。三脚插头需自备转换器。</p>
+</div>
+</div>
+
+</div><!-- end .c -->
+
+<div class="ft">
+<p>东京 · 伊豆 · 镰仓 5日行程攻略 &nbsp;|&nbsp; 2026.5.22—5.26</p>
+<p style="margin-top:6px;font-size:.78em">数据来源：小红书 · Google Maps · 日本观光局 &nbsp;|&nbsp; 图片版权归原作者所有</p>
+</div>
+
+<button class="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="回到顶部">↑</button>
+
+<script>
+// Nav scroll highlight
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+const sections = [...navLinks].map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+
+function updateNav() {
+  let current = '';
+  sections.forEach(s => {
+    if (s.getBoundingClientRect().top <= 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('on', a.getAttribute('href') === '#' + current);
+  });
+  // Back to top button
+  document.querySelector('.btt').classList.toggle('show', window.scrollY > 600);
+}
+window.addEventListener('scroll', updateNav, {passive: true});
+updateNav();
+</script>
+
+</body>
+</html>
